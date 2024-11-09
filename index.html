@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa de Supermercado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Caixa Eletrônico de Supermercado</h1>
+        
+            <h2>Total: R$ <span id="totalAmount">0.00</span></h2>
+        
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Preço (R$)</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="itemTable">
+                    <!-- As linhas da tabela serão geradas pelo JavaScript -->
+                </tbody>
+            </table>
+
+            <div class="payment">
+                <input type="number" id="paidAmount" placeholder="Valor Pago" />
+                <button onclick="finalizarCompra()">Finalizar Compra</button>
+            </div>
+        
+            <h3>Troco: R$ <span id="changeAmount">0.00</span></h3>
+        </div>
+
+        <div class="right">
+            <h2>Itens Selecionados</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+                <tbody id="selectedItemsTable">
+                    <!-- Itens selecionados com quantidades serão listados aqui -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
